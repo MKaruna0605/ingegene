@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+ background-image: url("https://www.xmple.com/wallpaper/linear-gradient-green-blue-1920x1080-c2-00ff7f-6495ed-a-315-f-14.svg");
+ }
+.slidecontainer {
+  width: 100%;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 76%;
+  height: 15px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-left: 47px;
+  background-color: red;
+}
+.slider:hover {
+  opacity: 1;
+}
+.btn {
+  border: 2px solid black;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.default:hover {
+  background: #e7e7e7;
+}
+.button {
+  background-color:wheat; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+.button4 {border-radius: 40px;}
+* {
+    box-sizing: border-box;
+  border-radius: 100px;
+}
+.zoom {
+  padding: 50px;
+  background-color:white;
+  transition: transform .2s;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.glyphicon {
+    font-size: 70px;
+    color:red;
+    margin-inline-start: -10px;
+    margin-top: -8px;
+}
+.text{
+  color:white;
+  margin: 14%;
+}
+p{
+margin-bottom: 500px;
+}
+</style>
+</head>
+<body>
+  <br>
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+
+<div style="text-align:center">
+  <div class="container">
+
+              <h1><em style="color:white;">RESULT OF THE TEST</em></h1>
+ 		<br>
+    		<br>
+    		<br>
+    		<br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="zoom">
+            <span class="glyphicon glyphicon-calendar"> </span>
+            <p style="color:red;"> Never</p>
+	</div>
+        </div>
+
+
+         
+            <div class="col-sm-2">
+              <div class="zoom">
+                <span class="glyphicon glyphicon-list-alt"></span>
+                <p style="color:red;"> Ocasinaly</p>
+
+              </div>
+            </div>
+
+
+            <div class="col-sm-2">
+              <div class="zoom">
+                <span class="glyphicon glyphicon-time"></span>
+                <p style="color:red;"> 3 hours</p>
+
+              </div>
+            </div>
+
+
+            <div class="col-sm-2">
+              <div class="zoom">
+                <span class="glyphicon glyphicon-comment"></span>
+                <p style="color:red;"> Yearly</p>
+
+              </div>
+            </div>
+
+
+            <div class="col-sm-2">
+              <div class="zoom">
+
+                <span class="glyphicon glyphicon-calendar"> </span>
+                <p style="color:red;"> Never</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+`
+
+
+  
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="5" class="slider" id="myRange" >
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+             <div class="row">
+              <div class="col-sm-4">
+            <span class="text"> LESS RELEVENT</span>
+              </div>
+              <div class="col-sm-4">
+            <span class="text">RELEVENT</span>
+            </div>
+            <div class="col-sm-4">
+               <span class="text">VERY
+              RELEVENT</span>
+              </div>
+               </div>
+<br>
+<br>
+<br>
+<button class="btn default" value="50"  onclick="abc()" id="myRange1">Try again</button>
+</div>
+</div>
+
+
+
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+function abc(){
+	document.getElementById('myRange').value=0;
+}
+</script>
+</body>
+</html>
